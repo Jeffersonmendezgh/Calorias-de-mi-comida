@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriIA - Contador de Calorías Inteligente</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>🍎 Calorías de Mi Comida</h1>
+        <p>Calcula las calorías exactas de tus platos escribiendo de forma libre.</p>
+    </header>
+
+    <main class="container">
+        <section class="calculator-card">
+            <label for="textoUsuario">¿Qué comiste hoy? (Sé específico con los gramos si los sabes):</label>
+            <textarea id="textoUsuario" placeholder="Ej: Desayuné 2 huevos revueltos, 100g de pan integral y una taza de café con leche..."></textarea>
+            <button id="btnCalcular">Calcular Calorías</button>
+        </section>
+
+        <div id="loading" class="hidden">Analizando tu plato con IA...</div>
+
+        <section id="resultados" class="hidden">
+            <div class="total-badge">
+                <h2>Total: <span id="totalCalorias">0</span> kcal</h2>
+            </div>
+            
+            <h3>Desglose Nutricional</h3>
+            <div id="listaAlimentos"></div>
+        </section>
+
+        
+    </main>
+
+    <script src="/static/js/app.js"></script>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div>
+                <h3>NutriIA</h3>
+                <p>Tu asistente para estimar calorías y nutrientes a partir de descripciones de comidas.</p>
+            </div>
+            <div class="footer-disclaimer">
+                <h4>Descargos de responsabilidad</h4>
+                <ul>
+                    <p>Aviso: Los datos proporcionados por esta herramienta son estimaciones automatizadas basadas en promedios estándar (ej. USDA) con fines puramente informativos y educativos. No sustituyen el consejo, diagnóstico o tratamiento de un nutricionista profesional o médico. Utilice bajo su propio riesgo.</p>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 NutriIA · Información orientativa únicamente</div>
+    </footer>
+</body>
+</html>

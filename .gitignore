@@ -1,0 +1,36 @@
+# Entorno virtual (ubicado en la raíz del proyecto)
+venv/
+.venv/
+env/
+ENV/
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Variables de entorno y secretos
+.env
+.env.*
+!.env.example
+
+# Bases de datos locales
+*.sqlite
+*.sqlite3
+*.db
+nutri_ia.db
+
+# Logs y temporales
+*.log
+*.tmp
+
+# Configuración de editores/IDE
+.vscode/
+.idea/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
